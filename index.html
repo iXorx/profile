@@ -7,19 +7,111 @@
       body {
         background-color: #f0f0f0;
         font-family: Arial, sans-serif;
+        /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite; */
+        height: 100vh;
+        padding: 100px 0;
       }
+      /* @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      } */
+      body {
+        background: linear-gradient(-45deg, #242424, #242827);
+        @media (prefers-reduced-motion: reduce) {
+          background: linear-gradient(-45deg, #242424, #242827);
+        }
+      }
+      section {
+        padding: 16px 32px;
+      }
+
       main {
         margin: 0 auto;
-        max-width: 800px;
-        padding: 20px;
+        max-width: 40rem;
+        min-width: 215px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .rounded-circle {
+        border-radius: 50%;
+        border: 5px solid rgba(255, 255, 255, 0.287);
+      }
+      .header {
+        border-radius: 10px 10px 0 0;
+        background: linear-gradient(0deg, #a2fae6 45%, #23d5ab 45%);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        padding: 16px;
+        gap: 2rem;
+
+        h1 {
+          margin: 2.5rem 0 1.5rem 0;
+          font-size: 2rem;
+        }
+
+        img {
+          width: 40%;
+          height: auto;
+          aspect-ratio: 1 / 1;
+          max-width: 150px;
+        }
+
+        p {
+          color: #666;
+        }
+      }
+      .contact {
+        padding: 16px 32px;
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>Jordi Turull</h1>
-      <p>¡Hola! Soy Jordi Turull, un desarrollador web de Barcelona.</p>
-      <p>Si quieres saber más sobre mí, puedes visitar mi perfil de <a href="https://www.linkedin.com/in/jorditurull/">LinkedIn</a>.</p>
+      <section class="header">
+        <img 
+          src="https://media.licdn.com/dms/image/C4E03AQEAdvH4U0aKxw/profile-displayphoto-shrink_400_400/0/1604438905043?e=1718236800&v=beta&t=xQaODbb74zp0uU7zDRBmkFo3ddhkedL8sXIWpaVBA8s" 
+          alt="Jordi Turull. Hombre de piel blanca, pelo corto moreno y barba corta. Lleva una camisa azul y posa delante de un fondo de oficina con gente trabajando detras desenfocada."
+          width="150" height="150" 
+          class="rounded-circle"
+        />
+        <div>
+
+          <h1>Jordi Turull</h1>
+          <p>
+            Frontend Lead | Cofunder at Happergy | Accessibility Champion
+          </p>
+        </div>
+      </section>
+      <section class="projects">
+        <h2>Proyectos</h2>
+        <ul>
+          <li>
+            <p>
+              Ahorra en la factura de la luz gracias a 
+              <a href="https://app.happergy.es">Happergy</a>
+            </p>
+          </li>
+        </ul>
+
+      </section>
+      <section class="contact">
+        <h2>Contacto</h2>
+        <p>Si quieres saber más sobre mí, puedes visitar mi perfil de <a href="https://www.linkedin.com/in/jorditurull/">LinkedIn</a>.</p>
+      </section>
+
+      
     </main>
   </body>
 
