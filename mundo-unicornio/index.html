@@ -1,27 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Mundo unicornio: testing + accesiblidad | Notas</title>
+    <title>Mundo unicornio: testing + accesibilidad | Notas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-color: rgb(240, 235, 248);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5rem;
+        margin: 0 auto;
+        max-width: 50rem;
+      }
+      main {
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+      h1, h2 {
+        color: rgb(103, 58, 183);
+        line-height: initial;
+      }
+    </style>
   </head>
   <body>
     <main>
-      <section class="header">
-        <img src="unicorn.png" alt="Unicorn" class="rounded-circle">
-        <div>
-          <h1>Unicorn</h1>
-          <p>Unicorn is a mythical creature that is known for its horn.</p>
-        </div>
-      </section>
-      <section class="contact">
-        <h2>Contact</h2>
-        <p>Email:
-          <a href="mailto:a11y@jorditurull.me">
-            a11y@jorditurull.me
-          </a>
-        </p>
-      </section>
+        <h1>Notas de la charla<br/>
+          "Mundo unicornio: testing + accesibilidad"</h1>
+          <section>
+            <h2>Feedback</h2>
+            <p>
+              Regálame tu feedback sobre la charla. ¡Gracias!
+            </p>
+            <a href="https://jorditurull.me/feedback/" style="color: rgb(103, 58, 183)">Formulario de feedback de la charla</a>
+          </section>
+          <section>
+            <h2>Recursos mencionados en la charla</h2>
+            <ul>
+              <li><a href="https://www.lflegal.com/2020/05/accessibility-is-delicious/">Citas cocina</a></li>
+              <li><a href="https://www.researchgate.net/figure/Equality-Equity-and-Justice-Source-Tony-Ruth-from-Maeda-2019_fig2_354087577">Equality, Equity and Justice Source: Tony Ruth from Maeda (2019)</a></li>
+              <li><a href="https://daresay.co/2023/10/03/inclusive-design/">Tipos de discapacidad</a></li>
+              <li><a href="https://saucelabs.com/resources/blog/best-practices-for-shifting-accessibility-testing-left">Shift to left</a></li>
+              <li><a href="https://devops.com/embedding-accessibility-into-the-devops-process/">Accesibilidad en todo el proceso</a></li>
+              <li><a href="https://ccrweb.ca/en/anti-oppression">Rueda del privilegio</a></li>
+              <li><a href="https://webaim.org/projects/million/">Million project</a></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Herramientas</h2>
+            <h3>Extensiones navegador</h3>
+            <ul lang="en">
+              <li><a href="https://chromewebstore.google.com/detail/aria-devtools/dneemiigcbbgbdjlcdjjnianlikimpck?hl=es"><strong>ARIA DevTools</strong></a></li>
+              <li><a href="https://chromewebstore.google.com/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?hl=es">Equal Access Accessibility Checker by IBM</a></li>
+              <li><a href="https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=es">HeadingsMap</a></li>
+              <li><a href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=es">Axe DevTools by deque</a></li>
+              <li><a href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=es">Wave Evaluation Tool</a></li>
+              <li><a href="https://chromewebstore.google.com/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce?hl=es">ARC Toolkit by TPGi</a></li>
+              <li><a href="https://chromewebstore.google.com/detail/taba11y/aocppmckdocdjkphmofnklcjhdidgmga?hl=es">Taba11y</a></li>
+            </ul>
+            <h3 lang="en">Bookmarklets</h3>
+            <ul lang="en">
+              <li><a href="https://sa11y.netlify.app/">sa11y</a></li>
+              <li><a href="https://codepen.io/aardrian/full/eYZWNyv">44x44 cursor</a></li>
+              <li><a href="https://dequeuniversity.com/validator">Deque</a></li>
+            </ul>
+          </section>
     </main>
   </body>
 </html>
