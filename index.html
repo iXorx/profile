@@ -12,17 +12,20 @@
         font-family: Satoshi;
         src: url('fonts/Satoshi-Medium.woff2') format('woff2');
       }
+      a {
+        color: #aaa;
+      }
       header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem;
-        background-color: #fefefe;
+        padding: .5rem 1rem;
         color: #242424;
 
         h1 {
           margin: 0;
-          font-size: 1.5rem;
+          font-size: 1rem;
+          text-align: center;
         }
 
         ul {
@@ -44,6 +47,18 @@
         padding: 0;
         margin: 0;
       }
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+      main {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 500px;
+        margin: auto;
+      }
 
       .avatar {
         border-radius: 50%;
@@ -54,10 +69,46 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+
+        li::marker {
+          font-size: 0;
+        }
+
+        a {
+          color: #fefefe;
+          text-decoration: none;
+        }
+
+        a:focus-visible {
+          outline: 2px solid #fefefe;
+          outline-offset: -1px;
+        }
+
+        a:hover {
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 3px;
+        }
       }
       .text {
         font-size: 3rem;  display: flex; flex-direction: column;
       }
+      footer {
+        padding: 1rem;
+        text-align: center;
+        background-color: #fefefe;
+        color: #242424;
+
+        ul {
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          list-style-type: none;
+        }
+      }
+
       @media screen and (min-width: 768px) {
       
         .presentation {
@@ -84,44 +135,33 @@
   <body>
     <header>
       <h1>Jordi Turull</h1>
-      <nav>
-        <ul>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#mentor">Mentor</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
-
-
-      <section class="header">
-
-        <div>
-          <p style="color: #fefefe; font-size: 2rem;">Hola, soy Jordi</p>
-          <div class="presentation">
-            <img 
-            src="img/profile.jpeg" 
-            alt="Jordi Turull. Hombre de piel blanca, pelo corto moreno y barba corta. Lleva una camisa azul y posa delante de un fondo de oficina con gente trabajando detrás desenfocada."
-            width="200" height="200" 
-            class="avatar"
-            fetchpriority="high"
+      <section>
+        <div class="presentation">
+          <img 
+          src="img/profile.jpeg" 
+          alt="Jordi Turull. Hombre de piel blanca, pelo corto moreno y barba corta. Lleva una camisa azul y posa delante de un fondo de oficina con gente trabajando detrás desenfocada."
+          width="200" height="200" 
+          class="avatar"
+          fetchpriority="high"
           />
-<div>
-
-          <p class="text">
-            <span>Frontend,</span>
-            <span>
-              Accesibilidad,
-            </span>
-            <span>
-              Mentoría,
-            </span>
-            <span>
-              Diseño.
-            </span>
-          </p>
-        </div>
+          <nav class="text">
+            <ul>
+              <li>
+                <a href="#frontend">Frontend</a>,
+              </li>
+              <li>
+                <a href="#accessibility">Accesibilidad</a>,
+              </li>
+              <li>
+                <a href="#mentor">Mentoría</a>,
+              </li>
+              <li>
+                <a href="#speaker" lang="en">Speaker</a>.
+              </li>
+            </ul>
+          </nav>
         </div>
         <p>
             Con casi 15 años de experiencia en el mundo del desarrollo web, he trabajado en empresas y proyectos de diferentes tamaños y sectores.
@@ -131,8 +171,8 @@
           </p>
         </div>
       </section>
-      <section class="card">
-        <h2>Proyectos</h2>
+      <section class="card" id="frontend">
+        <h2>Frontend</h2>
         Actualmente  
         <ul>
           <li>
@@ -144,6 +184,39 @@
         </ul>
 
       </section>
+      <section class="card" id="accessibility">
+        <h2>Accesibilidad</h2>
+        <p>
+          La accesibilidad es un derecho, no un privilegio. Por eso, me dedico a concienciar y formar a equipos de desarrollo en accesibilidad.
+        </p>
+      </section>
+      <section class="card" id="mentor">
+        <h2>Mentoría</h2>
+        <p>
+          La mentoría es una de las mejores maneras de aprender y de enseñar. Por eso, dedico parte de mi tiempo a mentorizar a personas que quieren aprender a programar.
+        </p>
+        <p>
+          Actualmente me puedes encontrar en ADPList como mentor. Si quieres que te ayude a mejorar tus habilidades técnicas, no dudes en contactar conmigo.
+        </p>
+      </section>
+      <section class="card" id="speaker">
+        <h2 lang="en">Speaker</h2>
+        <p>
+          Me encanta compartir conocimientos y experiencias. Por eso, he participado en varios eventos y conferencias como ponente.
+        </p>
+        <p>
+          Si quieres que participe en tu evento, no dudes en contactar conmigo.
+        </p>
+        <p>
+          Esta es una lista de las charlas en las que he participado:
+        </p>
+        <ul>
+          <li>
+            Garaje de ideas: Accesibilidad web
+          </li>
+
+        </ul>
+      </section>
       <section class="contact">
         <h2>Contacto</h2>
         <p>Si quieres saber más sobre mí, puedes visitar mi perfil de <a href="https://www.linkedin.com/in/jorditurull/">LinkedIn</a>.</p>
@@ -151,6 +224,23 @@
 
       
     </main>
+    <footer>
+      <ul aria-label="redes sociales">
+        <li>
+          <a href="https://twitter.com/ixorx">
+          <img src="img/twitter.svg" alt="Twitter" width="24" height="24" />
+            
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jorditurull/">
+            <img src="img/linkedin.svg" alt="LinkedIn" width="24" height="24" />
+            
+          </a>
+        </li>
+      </ul>
+      <p>© 2024 Jordi Turull</p>
+    </footer>
   </body>
 
 </html>
