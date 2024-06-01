@@ -5,65 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
-        background-color: rgb(240, 235, 248);
+        --primary-color: rgb(103, 58, 183);
+
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.5rem;
+        background-color: rgb(240, 235, 248);
         margin: 0 auto;
-        max-width: 50rem;
+        background-image: radial-gradient(rgb(104 58 183 / 50%) 0.5px, rgb(240, 235, 248) 0.5px);
+        background-size: 10px 10px;
       }
       main {
-        padding: 1rem;
         box-sizing: border-box;
       }
       h1, h2 {
         line-height: initial;
       }
       h2 {
-        color: rgb(103, 58, 183);
+        color: var(--primary-color);
+      }
+      li {
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .wrapper {
+        padding: 1rem 1.5rem;
+        margin: 0 auto;
+        max-width: 50rem;
+      }
+      .feedback {
+        background-color: #fff; 
+        border-top: 2px solid var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        padding: 3rem 0 1rem; 
+        text-align: center;
+        margin: 2rem auto;
       }
     </style>
   </head>
   <body>
     <main>
-        <h1>Notas de la charla "Mundo unicornio: testing + accesibilidad"</h1>
-          <section>
-            <h2>Feedback</h2>
+        <h1 class="wrapper" style="text-align: center;">Notas de la charla <quote>Mundo unicornio: testing + accesibilidad</quote></h1>
+        <section class="feedback">
+          <div style="max-width: 25rem; margin: auto">
+            <h2 style="margin-top: 0;">Feedback</h2>
             <p>
-              Regálame tu feedback sobre la charla. ¡Gracias!
+              Regálame 5 minutos de tu tiempo contestando el
+              <a href="https://jorditurull.me/feedback/" style="color: var(--primary-color);">formulario de feedback de la charla</a>
             </p>
-            <a href="https://jorditurull.me/feedback/" style="color: rgb(103, 58, 183)">Formulario de feedback de la charla</a>
-          </section>
-          <section>
-            <h2>Recursos mencionados en la charla</h2>
-            <ul>
-              <li><a href="https://www.lflegal.com/2020/05/accessibility-is-delicious/">Citas cocina</a></li>
-              <li><a href="https://www.researchgate.net/figure/Equality-Equity-and-Justice-Source-Tony-Ruth-from-Maeda-2019_fig2_354087577">Equality, Equity and Justice Source: Tony Ruth from Maeda (2019)</a></li>
-              <li><a href="https://daresay.co/2023/10/03/inclusive-design/">Tipos de discapacidad</a></li>
-              <li><a href="https://saucelabs.com/resources/blog/best-practices-for-shifting-accessibility-testing-left">Shift to left</a></li>
-              <li><a href="https://devops.com/embedding-accessibility-into-the-devops-process/">Accesibilidad en todo el proceso</a></li>
-              <li><a href="https://ccrweb.ca/en/anti-oppression">Rueda del privilegio</a></li>
-              <li><a href="https://webaim.org/projects/million/">Million project</a></li>
-            </ul>
-          </section>
-          <section>
-            <h2>Herramientas</h2>
-            <h3>Extensiones navegador</h3>
-            <ul lang="en">
-              <li><a href="https://chromewebstore.google.com/detail/aria-devtools/dneemiigcbbgbdjlcdjjnianlikimpck?hl=es"><strong>ARIA DevTools</strong></a></li>
-              <li><a href="https://chromewebstore.google.com/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?hl=es">Equal Access Accessibility Checker by IBM</a></li>
-              <li><a href="https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=es">HeadingsMap</a></li>
-              <li><a href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=es">Axe DevTools by deque</a></li>
-              <li><a href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=es">Wave Evaluation Tool</a></li>
-              <li><a href="https://chromewebstore.google.com/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce?hl=es">ARC Toolkit by TPGi</a></li>
-              <li><a href="https://chromewebstore.google.com/detail/taba11y/aocppmckdocdjkphmofnklcjhdidgmga?hl=es">Taba11y</a></li>
-            </ul>
-            <h3 lang="en">Bookmarklets</h3>
-            <ul lang="en">
-              <li><a href="https://sa11y.netlify.app/">sa11y</a></li>
-              <li><a href="https://codepen.io/aardrian/full/eYZWNyv">44x44 cursor</a></li>
-              <li><a href="https://dequeuniversity.com/validator">Deque</a></li>
-            </ul>
-          </section>
+            <p>¡Gracias!
+            </p>
+          </div>
+        </section>
+        <section class="wrapper">
+          <h2>Recursos mencionados en la charla</h2>
+          <ul>
+            <li><a href="https://www.lflegal.com/2020/05/accessibility-is-delicious/">Citas cocina</a></li>
+            <li><a href="https://www.researchgate.net/figure/Equality-Equity-and-Justice-Source-Tony-Ruth-from-Maeda-2019_fig2_354087577">Equality, Equity and Justice Source: Tony Ruth from Maeda (2019)</a></li>
+            <li><a href="https://daresay.co/2023/10/03/inclusive-design/">Tipos de discapacidad</a></li>
+            <li><a href="https://saucelabs.com/resources/blog/best-practices-for-shifting-accessibility-testing-left">Shift to left</a></li>
+            <li><a href="https://devops.com/embedding-accessibility-into-the-devops-process/">Accesibilidad en todo el proceso</a></li>
+            <li><a href="https://ccrweb.ca/en/anti-oppression">Rueda del privilegio</a></li>
+            <li><a href="https://webaim.org/projects/million/">Million project</a></li>
+          </ul>
+        </section>
+        <section class="wrapper">
+          <h2>Herramientas</h2>
+          <h3>Extensiones navegador</h3>
+          <p>Los siguientes enlaces son para las extensiones de Google Chrome. Para usarlas en Firefox simplemente busca por el mismo nombre.</p>
+          <ul lang="en" aria-label="Chrome extensions">
+            <li><a href="https://chromewebstore.google.com/detail/aria-devtools/dneemiigcbbgbdjlcdjjnianlikimpck?hl=es"><strong>ARIA DevTools</strong></a></li>
+            <li><a href="https://chromewebstore.google.com/detail/ibm-equal-access-accessib/lkcagbfjnkomcinoddgooolagloogehp?hl=es">Equal Access Accessibility Checker by IBM</a></li>
+            <li><a href="https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=es">HeadingsMap</a></li>
+            <li><a href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=es">Axe DevTools by deque</a></li>
+            <li><a href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=es">Wave Evaluation Tool</a></li>
+            <li><a href="https://chromewebstore.google.com/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce?hl=es">ARC Toolkit by TPGi</a></li>
+            <li><a href="https://chromewebstore.google.com/detail/taba11y/aocppmckdocdjkphmofnklcjhdidgmga?hl=es">Taba11y</a></li>
+          </ul>
+          <h3 lang="en">Bookmarklets</h3>
+          <p>
+            Un bookmarklet es un marcador que, en lugar de apuntar a una dirección URL, hace referencia a una pequeña porción de código JavaScript para ejecutar ciertas tareas automáticamente.
+          </p>
+          <p>
+            Arrastra los siguientes enlaces a tu barra de marcadores para tenerlos siempre a mano, o copia el enlace y añádelo manualmente como marcador:
+          </p>
+          <ul lang="en" aria-label="bookmarklets">
+            <li><a href="https://sa11y.netlify.app/">sa11y</a></li>
+            <li><a href="https://codepen.io/aardrian/full/eYZWNyv">44x44 cursor</a></li>
+            <li><a href="https://dequeuniversity.com/validator">Deque</a></li>
+          </ul>
+        </section>
+        <section class="wrapper">
+          <h2>Mas sobre mi</h2>
+          <p>Visita <a href="https://jorditurull.me">mi perfil</a> para contactar conmigo.</p>
+        </section>
     </main>
   </body>
 </html>
