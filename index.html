@@ -1,246 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Jordi Turull. Frontend Lead | Cofunder at Happergy | Accessibility Champion" />
-    <meta name="theme-color" content="#242424" />
-    <link href="fonts/Satoshi-Medium.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous" />
-    <title>Jordi Turull</title>
-    <style>
-      @font-face {
-        font-family: Satoshi;
-        src: url('fonts/Satoshi-Medium.woff2') format('woff2');
-      }
-      a {
-        color: #aaa;
-      }
-      header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: .5rem 1rem;
-        color: #242424;
-
-        h1 {
-          margin: 0;
-          font-size: 1rem;
-          text-align: center;
-        }
-
-        ul {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          gap: 2rem
-        }
-
-        li {
-          list-style-type: '';
-        }
-      }
-
-      body {
-        background-color: #242424;
-        color: #fff;
-        font-family: Satoshi, Arial, Verdana, Geneva, Tahoma, sans-serif;
-        padding: 0;
-        margin: 0;
-      }
-      ul {
-        padding: 0;
-        margin: 0;
-      }
-      main {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        max-width: 500px;
-        margin: auto;
-      }
-
-      .avatar {
-        border-radius: 50%;
-        border: 5px solid rgba(255, 255, 255, 0.287);
-      }
-      .presentation {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 1rem;
-        gap: 2rem;
-
-        li::marker {
-          font-size: 0;
-        }
-
-        a {
-          color: #fefefe;
-          text-decoration: none;
-        }
-
-        a:focus-visible {
-          outline: 2px solid #fefefe;
-          outline-offset: -1px;
-        }
-
-        a:hover {
-          text-decoration: underline;
-          text-decoration-thickness: 2px;
-          text-underline-offset: 3px;
-        }
-      }
-      .text {
-        font-size: 3rem;  display: flex; flex-direction: column;
-      }
-      footer {
-        padding: 1rem;
-        text-align: center;
-        background-color: #fefefe;
-        color: #242424;
-
-        ul {
-          display: flex;
-          gap: 1rem;
-          justify-content: center;
-          list-style-type: none;
-        }
-      }
-
-      @media screen and (min-width: 768px) {
-      
-        .presentation {
-          flex-direction: row;
-        }
-        .text {
-          font-size: 4rem;
-          line-height: 4.25rem; padding: 2rem;
-        }
-        .avatar {
-          width: 200px;
-          height: 200px;
-        }
-        .card {
-          padding: 1rem;
-        }
-        .contact {
-          padding: 1rem;
-        }
-        
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Jordi Turull</h1>
-    </header>
-    <main>
-      <section>
-        <div class="presentation">
-          <img 
-          src="img/profile.jpeg" 
-          alt="Jordi Turull. Hombre de piel blanca, pelo corto moreno y barba corta. Lleva una camisa azul y posa delante de un fondo de oficina con gente trabajando detrás desenfocada."
-          width="200" height="200" 
-          class="avatar"
-          fetchpriority="high"
-          />
-          <nav class="text">
-            <ul>
-              <li>
-                <a href="#frontend">Frontend</a>,
-              </li>
-              <li>
-                <a href="#accessibility">Accesibilidad</a>,
-              </li>
-              <li>
-                <a href="#mentor">Mentoría</a>,
-              </li>
-              <li>
-                <a href="#speaker" lang="en">Speaker</a>.
-              </li>
-            </ul>
-          </nav>
-        </div>
-        </div>
-      </section>
-      <section class="card" id="frontend">
-        <h2>Frontend</h2>
-        <p>
-            Con casi 15 años de experiencia en el mundo del desarrollo web, he trabajado en empresas y proyectos de diferentes tamaños y sectores.
-          </p>
-        Actualmente  
-        <ul>
-          <li>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Jordi Turull. Frontend Lead | Cofunder at Happergy | Accessibility Champion" />
+      <meta name="theme-color" content="#242424" />
+      <link href="fonts/Satoshi-Medium.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous" />
+      <title>Jordi Turull</title>
+      <style>@font-face {font-family: Satoshi;src: url('fonts/Satoshi-Medium.woff2') format('woff2');}a {color: #aaa;}a:visited {color: #eee;}a:focus {outline: none;}a:hover, a:focus-visible {outline: 2px solid #fff;}header {display: flex;align-items: center;justify-content: space-between;padding: 1rem;background-color: #fefefe;color: #242424;margin: auto;h1 {margin: 0;font-size: 1.5rem;width: 100%;max-width: 44rem;margin: auto;}}body {background-color: #242424;color: #fff;font-family: Satoshi, Arial, Verdana, Geneva, Tahoma, sans-serif;font-size: 1.25rem;line-height: 2rem;padding: 0;margin: 0;}main {padding-bottom: 4rem;}.card {padding: 1rem;display: flex;flex-direction: column;max-width: 44rem;margin: auto;}.avatar {border-radius: 50%;border: 5px solid rgba(255, 255, 255, 0.287);}.presentation {display: flex;align-items: center;justify-content: center;flex-direction: column;padding: 3rem 1rem;gap: 2rem;a {color: #fefefe;text-decoration: none;}a:focus {outline: none;}a:focus-visible {outline: 2px solid #fefefe;outline-offset: -1px;}a:hover {text-decoration: underline;text-decoration-thickness: 2px;text-underline-offset: 3px;}ul {padding: 0;margin: 0;}li::marker {font-size: 0;}}.text {font-size: 3rem;line-height: 3.5rem;display: flex;flex-direction: column;}footer {padding: 1rem;text-align: center;background-color: #fefefe;color: #242424;ul {display: flex;gap: 1rem;justify-content: center;list-style-type: none;gap: 8px;}a {display: block;padding: .5rem;}svg {fill: #242424 }}.speaker {ul {margin: 0;}li {margin: 2rem 0;line-height: 2rem;}}@media screen and (min-width: 768px) {.presentation {flex-direction: row; padding: 1rem}.text {font-size: 4rem;line-height: 4.25rem;padding: 2rem;}}</style>
+   </head>
+   <body>
+      <header>
+         <h1>Jordi Turull</h1>
+      </header>
+      <main>
+         <section>
+            <div class="presentation">
+               <img 
+                  src="img/profile.jpeg" 
+                  alt="Hombre de piel blanca, mediana edad, pelo corto moreno y barba corta. Lleva una camisa azul abierta con camiseta negra debajo"
+                  width="200" height="200" 
+                  class="avatar"
+                  fetchpriority="high"
+                  />
+               <nav class="text">
+                  <ul>
+                     <li>
+                        <a href="#frontend">Frontend</a>,
+                     </li>
+                     <li>
+                        <a href="#accessibility">Accesibilidad</a>,
+                     </li>
+                     <li>
+                        <a href="#mentor">Mentoría</a>,
+                     </li>
+                     <li>
+                        <a href="#speaker" lang="en">Speaker</a>.
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            </div>
+         </section>
+         <section class="card" id="frontend">
+            <h2>Frontend</h2>
+            <p>Con 15 años de experiencia en el mundo del desarrollo web, he trabajado en empresas y proyectos de diferentes tamaños y sectores.</p>
             <p>
-              Ahorra en la factura de la luz gracias a 
-              <a href="https://app.happergy.es">Happergy</a>
+               Actualmente, soy <strong>Frontend Lead</strong> en <a href="https://shop.mango.com">Mango.com</a> a la vez que gestiono mi proyecto personal en <a href="https://app.happergy.es">Happergy.es</a>, ayudando a la gente a ahorrar en su factura de la luz.
             </p>
-          </li>
-        </ul>
-
-      </section>
-      <section class="card" id="accessibility">
-        <h2>Accesibilidad</h2>
-        <p>
-          Desde hace 4 años, me he dedicado a ser un <i lang="en">Accessibility Champion</i>, difundiendo y concienciando sobre accesibilidad, dentro y fuera de la empresa.
-        </p>
-        <p>
-          La accesibilidad es un derecho, no un privilegio. Por eso, me dedico a concienciar y formar a equipos de desarrollo en accesibilidad.
-        </p>
-      </section>
-      <section class="card" id="mentor">
-        <h2>Mentoría</h2>
-        <p>
-          La mentoría es una de las mejores maneras de aprender y de enseñar. Por eso, dedico parte de mi tiempo a mentorizar a personas que quieren aprender a programar.
-        </p>
-        <p>
-          Actualmente me puedes encontrar en ADPList como mentor. Si quieres que te ayude a mejorar tus habilidades técnicas, no dudes en contactar conmigo.
-        </p>
-      </section>
-      <section class="card" id="speaker">
-        <h2 lang="en">Speaker</h2>
-        <p>
-          Me encanta compartir conocimientos y experiencias. Por eso, he participado en varios eventos y conferencias como ponente.
-        </p>
-        <p>
-          Si quieres que participe en tu evento, no dudes en contactar conmigo.
-        </p>
-        <p>
-          Esta es una lista de las charlas en las que he participado:
-        </p>
-        <ul>
-          <li>
-            Garaje de ideas: Accesibilidad web
-          </li>
-
-        </ul>
-      </section>
-      <section class="contact">
-        <h2>Contacto</h2>
-        <p>Si quieres saber más sobre mí, puedes visitar mi perfil de <a href="https://www.linkedin.com/in/jorditurull/">LinkedIn</a>.</p>
-      </section>
-
-      
-    </main>
-    <footer>
-      <ul aria-label="redes sociales">
-        <li>
-          <a href="https://twitter.com/ixorx">
-          <img src="img/twitter.svg" alt="Twitter" width="24" height="24" />
-            
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/jorditurull/">
-            <img src="img/linkedin.svg" alt="LinkedIn" width="24" height="24" />
-            
-          </a>
-        </li>
-      </ul>
-      <p>© 2024 Jordi Turull</p>
-    </footer>
-  </body>
-
+         </section>
+         <section class="card" id="accessibility">
+            <h2>Accesibilidad</h2>
+            <p>
+               Desde hace 4 años, me he dedicado a ser un <i lang="en">Accessibility Champion</i>, difundiendo y concienciando sobre accesibilidad, dentro y fuera de la empresa.
+            </p>
+            <p>
+               La accesibilidad es un derecho, no un privilegio. Por eso, me dedico a concienciar y formar a equipos de desarrollo en accesibilidad.
+            </p>
+         </section>
+         <section class="card" id="mentor">
+            <h2>Mentoría</h2>
+            <p>
+               La mentoría es una de las mejores maneras de aprender y de enseñar. Por eso, dedico parte de mi tiempo a mentorizar a personas que quieren aprender a programar o necesitan orientación laboral en el sector.
+            </p>
+            <p>
+               Actualmente me puedes encontrar en <a href="https://adplist.org/mentors/jordi-turull">ADPList</a> como mentor. Si crees que te puedo ayudar charlar un rato, no dudes en contactar conmigo.
+            </p>
+         </section>
+         <section class="card speaker" id="speaker">
+            <h2 lang="en">Speaker</h2>
+            <p>
+               Me encanta compartir conocimientos y experiencias. Por eso, he participado en varios eventos y conferencias como ponente.
+            </p>
+            <p>
+               Si quieres que participe en tu evento, no dudes en <a href="mailto:hi@jorditurull.me">mandarme un correo electrónico</a>.
+            </p>
+            <h3 id="talks">
+               Charlas en las que he participado:
+            </h3>
+            <ul aria-labelledby="talks">
+               <li>
+                  Activismo Positivo: <a href="https://www.youtube.com/watch?v=ykbPMBqGPRs">[YouTube] Charla positiva con Jordi Turull</a> <time datetime="2021-05-19">(19/05/2021)</time>
+               </li>
+               <li>
+                  DevBcn: <a href="https://www.devbcn.com/2023/talk/428580">[Programa] Extendiendo los microservicios al frontend: Microfrontends.</a> <time datetime="2023-07-03">(03/07/2023)</time>
+               </li>
+               <li>
+                  Garaje de ideas: <a href="https://www.youtube.com/watch?v=oTi_MwsBohE">[YouTube] Mejorando la accesibilidad de tu aplicación con react-testing-library 🐙</a> <time datetime="2023-07-12">(12/07/2023)</time>
+               </li>
+               <li>
+                  Fabrics: Mundo unicornio 🦄 testing + accesibilidad <time datetime="2024-06-06">(06/06/2024)</time>
+               </li>
+               <li>
+                  VLC Tech Fest: <a href="https://vlctechfest.org/es/#sessions">[Programa] Mundo unicornio 🦄 testing + accesibilidad</a> <time datetime="2024-06-08">(08/06/2024)</time>
+               </li>
+               <li>
+                  DevBcn: <a href="https://www.devbcn.com/talk/629904">[Programa] Mundo unicornio 🦄 testing + accesibilidad</a> <time datetime="2024-06-13">(13/06/2024)</time>
+               </li>
+            </ul>
+         </section>
+      </main>
+      <footer>
+         <ul aria-label="Redes sociales">
+            <li>
+               <a href="https://x.com/ixorx">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="44" viewBox="0 0 512 512">
+                     <path fill="#000" d="M0 0h512v512H0z"/>
+                     <path fill="#fff" fill-rule="evenodd" d="M192 98H83l129 171L91 412h56l92-108 81 107h109L296 235v1l115-136h-56l-85 101zm-49 30h34l192 253h-34z" clip-rule="evenodd"/>
+                     <title>X</title>
+                  </svg>
+               </a>
+            </li>
+            <li>
+               <a href="https://www.linkedin.com/in/jorditurull/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="44" viewBox="0 0 455 455">
+                     <path d="M246 204zM0 0v455h455V0H0zm142 378H74V175h68v203zm-34-231h-1c-22 0-37-15-37-35s15-35 38-35 38 15 38 35-15 35-38 35zm277 231h-68V269c0-27-9-46-34-46-18 0-29 13-34 25-2 4-3 10-3 17v113h-67V175h67v29c9-14 25-34 61-34 45 0 78 29 78 92v116z"/>
+                     <title>LinkedIn</title>
+                  </svg>
+               </a>
+            </li>
+            <li>
+               <a href="mailto:hi@jorditurull.me">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 2 19 19">
+                     <path d="M16 1.7v15.8H0V1.7zM2.3 12.3l3.8-2.5L2.4 7zm1-5.5L7 9.5a1.7 1.7 0 0 0 1.8 0l3.7-2.7zm9 5.6-3.3-2a2.5 2.5 0 0 1-2.2 0l-3.2 2zM13.5 7 9.8 9.8l3.8 2.5z"/>
+                     <title>Email</title>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+         <p>© 2024 Jordi Turull</p>
+      </footer>
+      <script async src="https://data.happergy.es/script.js" data-website-id="8edf77b5-8782-4e58-83ab-2317fb870bea"></script>
+   </body>
 </html>
